@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PAD Character Creator</title>
+
+  
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>✨ Journal Entry Encoder</h1>
+    <p class="subtitle">Enter in a Journal Entry Here!</p>
+
+    <!-- API key (kept client‑side for demo only) 
+    <label for="apiKey">Gemini API Key</label>
+    <input
+      class="api-input"
+      id="apiKey"
+      type="password"
+      placeholder="Enter API Key Here"
+    />
+    -->
+
+    <!-- Backstory input -->
+    <label for="backstory">Character Backstory</label>
+    <textarea
+      id="backstory"
+      placeholder="Enter your entry…"
+    ></textarea>
+
+    <!-- Action buttons -->
+    <div class="buttons">
+      <button class="btn-create" id="createBtn">Create Character</button>
+      <button class="btn-reset" id="resetBtn">Reset</button>
+    </div>
+
+    <p class="status" id="status"></p>
+
+    <!-- Rive character -->
+    <div class="character-stage">
+      <canvas id="riveCanvas" width="800" height="800"></canvas>
+    </div>
+
+    <!-- PAD readouts -->
+    <div class="pad-row">
+      <div class="pad-card">
+        <div class="pad-label">Pleasure</div>
+        <div class="pad-number" id="pVal">0</div>
+        <div class="pad-range">−50 to 50</div>
+      </div>
+      <div class="pad-card">
+        <div class="pad-label">Arousal</div>
+        <div class="pad-number" id="aVal">0</div>
+        <div class="pad-range">−50 to 50</div>
+      </div>
+      <div class="pad-card">
+        <div class="pad-label">Dominance</div>
+        <div class="pad-number" id="dVal">0</div>
+        <div class="pad-range">−50 to 50</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rive runtime -->
+  <script src="https://unpkg.com/@rive-app/canvas@latest"></script>
+  <script src="PADCharacter.js"></script>
+</body>
+</html>

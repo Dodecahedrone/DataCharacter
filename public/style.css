@@ -1,0 +1,189 @@
+/* ── reset & base ── */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 50%, #e0f2fe 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 48px 16px;
+}
+
+/* ── card container ── */
+.card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 40px 36px;
+    max-width: 580px;
+    width: 100%;
+    box-shadow: 0 8px 40px rgba(14, 116, 144, 0.12),
+                0 1.5px 4px rgba(14, 116, 144, 0.06);
+}
+
+h1 {
+    text-align: center;
+    color: #0c4a6e;
+    font-size: 1.75rem;
+    margin-bottom: 2px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #7dd3fc;
+    font-size: 0.88rem;
+    margin-bottom: 28px;
+}
+
+/* ── form fields ── */
+label {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #0369a1;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.api-input,
+textarea {
+    width: 100%;
+    border: 2px solid #bae6fd;
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.25s, box-shadow 0.25s;
+    background: #f0f9ff;
+}
+
+.api-input:focus,
+textarea:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+    background: #fff;
+}
+
+.api-input {
+    margin-bottom: 20px;
+}
+
+textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+/* ── buttons ── */
+.buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+button {
+    flex: 1;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.btn-create {
+    background: linear-gradient(135deg, #38bdf8, #0284c7);
+    color: #fff;
+}
+
+.btn-create:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(2, 132, 199, 0.35);
+}
+
+.btn-create:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.btn-reset {
+    background: #f0f9ff;
+    color: #0369a1;
+    border: 2px solid #bae6fd;
+}
+
+.btn-reset:hover {
+    background: #e0f2fe;
+}
+
+/* ── status message ── */
+.status {
+    text-align: center;
+    margin-top: 14px;
+    font-size: 0.88rem;
+    color: #0ea5e9;
+    min-height: 22px;
+}
+
+/* ── rive canvas area ── */
+.character-stage {
+    margin-top: 24px;
+    background: linear-gradient(180deg, #f0f9ff, #e0f2fe);
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#riveCanvas {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 1 / 1;
+    max-width: 420px;
+}
+
+/* ── PAD value cards ── */
+.pad-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.pad-card {
+    flex: 1;
+    text-align: center;
+    padding: 14px 8px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+}
+
+.pad-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #0369a1;
+    margin-bottom: 2px;
+}
+
+.pad-number {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #0c4a6e;
+    line-height: 1.1;
+}
+
+.pad-range {
+    font-size: 0.65rem;
+    color: #7dd3fc;
+}

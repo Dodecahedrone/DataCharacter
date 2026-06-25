@@ -9,7 +9,7 @@
 
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #4e719b 0%, #cedced 100%);
+    background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 50%, #e0f2fe 100%);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -29,14 +29,14 @@ body {
 
 h1 {
     text-align: center;
-    color: #1d2841;
+    color: #0c4a6e;
     font-size: 1.75rem;
     margin-bottom: 2px;
 }
 
 .subtitle {
     text-align: center;
-    color: #4e719b;
+    color: #7dd3fc;
     font-size: 0.88rem;
     margin-bottom: 28px;
 }
@@ -46,7 +46,7 @@ label {
     display: block;
     font-size: 0.82rem;
     font-weight: 600;
-    color: #4e719b;
+    color: #0369a1;
     margin-bottom: 6px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -55,21 +55,21 @@ label {
 .api-input,
 textarea {
     width: 100%;
-    border: 2px solid #cedced;
+    border: 2px solid #bae6fd;
     border-radius: 12px;
     padding: 12px 16px;
     font-size: 0.95rem;
     font-family: inherit;
     outline: none;
     transition: border-color 0.25s, box-shadow 0.25s;
-    background: #e4e4e4;
+    background: #f0f9ff;
 }
 
 .api-input:focus,
 textarea:focus {
-    border-color: #cedced;
+    border-color: #38bdf8;
     box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
-    background: #e4e4e4;
+    background: #fff;
 }
 
 .api-input {
@@ -100,13 +100,13 @@ button {
 }
 
 .btn-create {
-    background: linear-gradient(135deg, #4e719b, #1d2841);
+    background: linear-gradient(135deg, #38bdf8, #0284c7);
     color: #fff;
 }
 
 .btn-create:hover:not(:disabled) {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(78, 113, 155, 0.35);
+    box-shadow: 0 6px 20px rgba(2, 132, 199, 0.35);
 }
 
 .btn-create:disabled {
@@ -115,13 +115,13 @@ button {
 }
 
 .btn-reset {
-    background: #e4e4e4;
-    color: #4e719b;
-    border: 2px solid #cedced;
+    background: #f0f9ff;
+    color: #0369a1;
+    border: 2px solid #bae6fd;
 }
 
 .btn-reset:hover {
-    background: #cedced;
+    background: #e0f2fe;
 }
 
 /* ── status message ── */
@@ -129,14 +129,14 @@ button {
     text-align: center;
     margin-top: 14px;
     font-size: 0.88rem;
-    color: #4e719b;
+    color: #0ea5e9;
     min-height: 22px;
 }
 
 /* ── rive canvas area ── */
 .character-stage {
     margin-top: 24px;
-    background: linear-gradient(180deg, #e4e4e4, #f2f2f2);
+    background: linear-gradient(180deg, #f0f9ff, #e0f2fe);
     border-radius: 18px;
     display: flex;
     justify-content: center;
@@ -164,7 +164,7 @@ button {
     text-align: center;
     padding: 14px 8px;
     border-radius: 14px;
-    background: linear-gradient(135deg, #e4e4e4, #f2f2f2);
+    background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
 }
 
 .pad-label {
@@ -172,18 +172,18 @@ button {
     font-weight: 700;
     letter-spacing: 1.2px;
     text-transform: uppercase;
-    color: #1d2841;
+    color: #0369a1;
     margin-bottom: 2px;
 }
 
 .pad-number {
     font-size: 2rem;
     font-weight: 800;
-    color: #1d2841;
+    color: #0c4a6e;
     line-height: 1.1;
 }
 
 .pad-range {
     font-size: 0.65rem;
-    color: #4e719b;
+    color: #7dd3fc;
 }

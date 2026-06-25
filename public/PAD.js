@@ -91,7 +91,7 @@ document.getElementById("createBtn").addEventListener("click", async () => {
     }
 
     btn.disabled = true;
-    status.textContent = "🔮  Analyzing backstory…";
+    status.textContent = "🔮  Analyzing entry…";
 
     try {
         // Look mom, no API key being leaked in the user's browser!

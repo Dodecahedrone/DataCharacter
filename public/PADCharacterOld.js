@@ -173,7 +173,6 @@ async function fetchPAD(backstory, apiKey) {
 document
     .getElementById("createBtn")
     .addEventListener("click", async () => {
-    const apiKey    = "AIzaSyDzlxwkJjap_nX1_9YaT1kUxNmxgdIo_yw";
     const backstory = document.getElementById("backstory").value.trim();
     const status    = document.getElementById("status");
     const btn       = document.getElementById("createBtn");

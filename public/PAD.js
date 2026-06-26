@@ -6,7 +6,7 @@ let riveInstance = null; let pleasureBind = null; let arousalBind = null; let do
 
 function initRive() {
     riveInstance = new rive.Rive({
-        src: "pad_test.riv",
+        src: "pad_character_v2.riv",
         canvas: document.getElementById("riveCanvas"),
         autoplay: true,
         autoBind: true,
